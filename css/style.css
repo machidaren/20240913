@@ -1,146 +1,140 @@
 @charset "utf-8";
-
-body {
-  margin: 0;
-  color: #212121;
-  font-size: 16px;
+body{
+   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/***************
+* header
+****************/
+header {
+    height: 80px;
+}
+header h1{
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+}
+
+/***************
+* main
+****************/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding-bottom: 120px;
+}
+h2{
+    font-size: 32px;
+       text-align: center;
+       margin: 0 0 40px;
+}
+h2 span{
+    font-size: 14px;
+    display: block; 
+}
+.btn{
+    display: block;
+    width: 160px;
+    color: #fff;
+    background-color: #666;
+    text-align: center;
+    padding: 8px 0;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: auto;
 }
 
 a:hover{
-  opacity: .5;
+    opacity: .5;
 }
- .wrapper {
-  background: #ffd6f1;
-} 
-
-header {
-  background: #f88686;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  color: white;
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} 
-
-.logo {
-  font-size: 30px;
-}
-
-nav ul {
-  display: flex;
-  gap: 48px;
-  list-style-type: none;
-}
-
-main {
-margin: 40px 0 ;
-
-}
-
-.contents{
-  width: 1024px;
-  margin: auto;
-}
-
-section{
-  margin-top: 60px;
-}
-/* 見出し共通 */
- h2{
-  font-size: 36px;
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  }
-  
- h2 span{
-    font-size: 18px;
+/***************
+* #main-visual
+****************/
+#main-visual img{
     display: block;
-    }
-/***************
-
-****************/
-#first-view {
-  display: flex;
+    width: 100%;
 }
 
-#first-view .text{
-  align-self: center;
-margin-right: 50px;
-}
-#first-view h1{
-  font-size: 64px;
-  margin: 0 0 60px;
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-#first-view .sub-title{
-  font-size: 18px;
-  display: block;
-}
 
 /***************
-* #sec-1
+* .news-list
 ****************/
-#sec-1{
-display: flex;
-flex-direction: row-reverse;
-padding-left: 60px;
-justify-content: space-between;
+.news-list{
+    width: 800px;
+    margin: auto;
+}
+.news-list div{
+    display: flex;
+    gap: 40px;
+}
+.news-list div+div{
+    margin-top: 40px;
+}
+.news-list dd{
+    margin: 0;
+}
+/***************
+* #vision
+****************/
+#vision{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+#vision .text-area{
+    margin-right: auto;
+}
+#vision h2{
+    text-align: left;
+    line-height: 1.4;
+}
+#vision img{
+    width: 50%;
 }
 
-.sec-1-right{
-width: 560px;
-  }
-
-.sec-1-right p {
-  margin: 30px 0;
+/***************
+* .services
+****************/
+.services{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
 }
-
-/* sec-2 */
-#sec-2 h2 {
-  text-align: center;
+.services figure{
+margin: 0;
 }
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 29px;
-}
-
-
-.btn_box{
-  display: block;
-  width: 250px;
-  padding: 10px 0;
-  border: 2px solid #212121;
-  margin: 60px auto 0;
-  text-align: center;
-}
-
-.btn_box{
-  background-color: #212121;
-  color: white;
-}
-
-#sec-3 {
+.services figcaption{
+margin-top: 30px;
 text-align: center;
 }
-
-/* footer */
-footer {
-background: #f88686;
-font-size: 14px;
-padding: 10px 0;
-text-align: center;
-color: white;
+#service .btn{
+margin-top: 40px;
 }
+img.a{
+    width: 60%;
+    height: 60%;
+}
+/***************
+* footer
+****************/
+footer{
+    height: 80px;
+    text-align: center;
+    background-color: #212121;
+
+}
+footer .copyright{
+    color: #fff;
+    line-height: 80px;
+}
+
+/***************
+* 
+****************/
+
+
